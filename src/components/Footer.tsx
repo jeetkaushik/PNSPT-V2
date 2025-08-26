@@ -24,8 +24,7 @@ const Footer = () => {
           {/* Left - Logo and Description */}
           <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            <img src={pnsptLogo} alt="PNSPT Logo" className="h-8 w-auto" />
-            <span className="text-xl font-bold text-[#333333]">PNSPT</span>
+            <img src={pnsptLogo} alt="" className="h-8 w-auto" />
           </div>
             <p className="text-sm text-[#333333] leading-relaxed">
               We offers a comprehensive suite of digital marketing services that cover all aspects

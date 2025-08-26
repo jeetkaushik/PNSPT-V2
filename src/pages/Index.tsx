@@ -68,7 +68,7 @@ const Index = () => {
             by providing holistic support that covers not just training but every aspect critical to an
             athlete's journey
           </p>
-          <div className="inline-block bg-primary/60 px-6 py-3 animate-scale-in">
+          <div className="inline-block w-fit mx-auto bg-primary/60 px-6 py-3 animate-scale-in">
             <span className="text-lg md:text-xl font-medium text-white">
               Empowering Lives Through Sports and Skills
             </span>
@@ -96,7 +96,7 @@ const Index = () => {
             </div>
             <div className="mb-6">
               <span className="text-lg text-muted-foreground">The Prakash Nanjappa Sports Promotion Trust (PNSPT) was founded with a singular vision: </span>
-              <span className="text-lg font-semibold text-white bg-primary px-3 py-1 rounded">
+              <span className="block w-fit text-lg font-semibold text-white bg-primary px-3 py-1 rounded">
                 to scout, nurture, and empower
               </span>
             </div>
