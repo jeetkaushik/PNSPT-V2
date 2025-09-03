@@ -21,6 +21,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One:wght@400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Netlify Forms Registration -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="subject">
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Training Programs">Training Programs</option>
+        <option value="Donations">Donations</option>
+        <option value="Partnership">Partnership</option>
+        <option value="Media Inquiry">Media Inquiry</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
   </head>
 
   <body>

@@ -98,7 +98,17 @@ const Contact = () => {
             <div className="section-animate">
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-                <form className="space-y-6">
+                <form 
+                  name="contact" 
+                  method="POST" 
+                  data-netlify="true" 
+                  netlify-honeypot="bot-field" 
+                  action="/success.html"
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="text" name="bot-field" style={{display:"none"}} />
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -106,8 +116,10 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="firstName"
                         className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Your first name"
+                        required
                       />
                     </div>
                     <div>
@@ -116,8 +128,10 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="lastName"
                         className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Your last name"
+                        required
                       />
                     </div>
                   </div>
@@ -127,8 +141,10 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="your.email@example.com"
+                      required
                     />
                   </div>
                   <div>
@@ -137,6 +153,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="tel"
+                      name="phone"
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="+91 12345 67890"
                     />
@@ -145,12 +162,17 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Subject
                     </label>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent">
-                      <option>General Inquiry</option>
-                      <option>Training Programs</option>
-                      <option>Donations</option>
-                      <option>Partnership</option>
-                      <option>Media Inquiry</option>
+                    <select 
+                      name="subject"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+                      required
+                    >
+                      <option value="">Select a subject</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                      <option value="Training Programs">Training Programs</option>
+                      <option value="Donations">Donations</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Media Inquiry">Media Inquiry</option>
                     </select>
                   </div>
                   <div>
@@ -158,12 +180,14 @@ const Contact = () => {
                       Message
                     </label>
                     <textarea
+                      name="message"
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="Tell us about your inquiry..."
+                      required
                     ></textarea>
                   </div>
-                  <Button variant="cta" size="lg" className="w-full">
+                  <Button type="submit" variant="cta" size="lg" className="w-full">
                     Send Message
                   </Button>
                 </form>
