@@ -32,12 +32,12 @@ const WhatWeDo = () => {
     {
       icon: Target,
       title: "Talent Scouting",
-      description: "We identify and recruit promising para-athletes with exceptional potential in shooting sports across India."
+      description: "We identify talented para-athletes across India, especially in shooting, and offer them professional-level training and opportunities."
     },
     {
       icon: Award,
-      title: "World-Class Training",
-      description: "Our athletes receive comprehensive training from experienced coaches using international-standard methodologies."
+      title: "World-Class Infrastructure",
+      description: "We either adopt existing institutions with good sports facilities or establish our own international-standard shooting ranges and training centers to give our athletes the best environment to grow."
     },
     {
       icon: Users,
@@ -83,7 +83,7 @@ const WhatWeDo = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 section-animate">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">What We Stand For</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We provide comprehensive support to para-athletes through our specialized programs and services designed to maximize their potential and achieve sporting excellence.
             </p>

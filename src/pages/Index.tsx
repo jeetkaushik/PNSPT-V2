@@ -36,12 +36,36 @@ const Index = () => {
   }, []);
 
   const sdgCards = [
-    { icon: Heart, title: "Quality Education", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
-    { icon: Users, title: "Reduced Inequalities", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
-    { icon: Globe, title: "Peace and Justice", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
-    { icon: Medal, title: "Partnerships for Goals", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
-    { icon: Leaf, title: "Sustainable Cities", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
-    { icon: Target, title: "Good Health", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." },
+    {
+      icon: Heart,
+      title: "SDG 4 : Quality Education",
+      description: "We provide para athletes with access to professional education, certifications, technical sports training, and skill development programs. Through holistic learning pathways, we equip them with the knowledge and expertise to build long-term, sustainable careers in sports, coaching, and beyond."
+    },
+    {
+      icon: Users,
+      title: "SDG 10 : Reduced Inequalities",
+      description: "Differently-abled athletes often face systemic challenges and societal barriers. Our programs are designed to level the playing field, ensuring that talent, not disability, defines an athlete's journey. By giving para athletes equal opportunities for training, competition, employment, and recognition, PNSPT actively works toward reducing inequalities in society."
+    },
+    {
+      icon: Globe,
+      title: "SDG 8 : Decent Work and Economic Growth",
+      description: "We emphasize scientific sports training, physical fitness, mental health support, and injury rehabilitation for our athletes. Our holistic wellness programs help athletes achieve optimal health, enhancing their performance and overall quality of life."
+    },
+    {
+      icon: Medal,
+      title: "SDG 5 : Gender Equality",
+      description: "Our programs encourage equal participation of women para athletes, promoting leadership, visibility, and empowerment for women in sports. PNSPT is committed to building an ecosystem where both men and women para athletes receive the support and recognition they deserve."
+    },
+    {
+      icon: Leaf,
+      title: "SDG 17 : Partnerships for the Goals",
+      description: "Through strategic CSR partnerships with corporates, institutions, and individuals, we foster a collaborative approach to achieving our vision. Together with our partners, we maximize our impact, align with national and international development agendas, and amplify our collective contribution toward a better world."
+    },
+    {
+      icon: Target,
+      title: "SDG 3 : Good Health AND Well-Being",
+      description: "We emphasize scientific sports training, physical fitness, mental health support, and injury rehabilitation for our athletes. Our holistic wellness programs help athletes achieve optimal health, enhancing their performance and overall quality of life."
+    }
   ];
 
   return (
@@ -59,14 +83,12 @@ const Index = () => {
         }}
       >
         <div className="absolute inset-0 hero-overlay"></div>
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Prakash Nanjappa Sports Promotion Trust
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 animate-slide-up max-w-3xl mx-auto">
-            At PNSPT we create the best shooters for India. Our Trust goes beyond traditional coaching
-            by providing holistic support that covers not just training but every aspect critical to an
-            athlete's journey
+          <p className="text-lg md:text-lg lg:text-2xl mb-8 text-gray-200 animate-slide-up max-w-4xl mx-auto">
+            The Prakash Nanjappa Sports Promotion Trust (PNSPT) is dedicated to nurturing sporting talent across India with a special focus on inclusivity. Founded by Olympian and Arjuna Awardee Prakash Nanjappa, the trust works to empower para, deaf, blind, and underprivileged athletes in Olympic shooting and beyond. Through structured training, grassroots programs, and coach development initiatives, PNSPT strives to create opportunities, break barriers, and build tomorrow’s champions.
           </p>
           <div className="inline-block w-fit mx-auto bg-primary/60 px-6 py-3 animate-scale-in">
             <span className="text-lg md:text-xl font-medium text-white">
@@ -94,9 +116,9 @@ const Index = () => {
               <Target className="h-6 w-6 text-primary mr-2" />
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">About Us</h2>
             </div>
-            <div className="mb-6">
-              <span className="text-lg text-muted-foreground">The Prakash Nanjappa Sports Promotion Trust (PNSPT) was founded with a singular vision: </span>
-              <span className="block w-fit text-lg font-semibold text-white bg-primary px-3 py-1 rounded">
+            <div className="mb-6 flex items-center justify-center flex-col ">
+              <span className="text-lg text-muted-foreground mb-4">The Prakash Nanjappa Sports Promotion Trust (PNSPT) was founded with a singular vision: </span>
+              <span className="block w-fit text-center text-lg font-semibold text-white bg-primary px-3 py-1 rounded">
                 to scout, nurture, and empower
               </span>
             </div>
@@ -112,14 +134,26 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             <FeatureCard
               icon={RotateCcw}
-              title="360° coaching support"
-              description="Our Trust goes beyond traditional coaching by providing holistic support that covers not just training but every aspect critical to an athlete's journey — from world-class facilities to emotional support and financial sponsorships."
+              title="A Brighter India on the Global sports stage"
+              description="We envision India as a global powerhouse in para sports, where athletes trained with resilience and determination proudly raise the national flag at Paralympics, World Championships, and beyond — not by chance, but through design, effort, and belief."
               className="section-animate"
             />
             <FeatureCard
               icon={Award}
-              title="80G certified"
-              description="PNSPT is 80G certified, making all contributions tax-deductible and allowing individuals and organizations to meaningfully support India's Paralympic movement."
+              title="Building Champions not just particpants"
+              description="We believe differently-abled athletes are defined by spirit, not challenges. Our mission is to break barriers and build champions who inspire generations, celebrated equally for their excellence and achievements."
+              className="section-animate"
+            />
+            <FeatureCard
+              icon={Users}
+              title="A Sports Ecosystem where every dream matters "
+              description="We are building an inclusive sports ecosystem that provides world-class training, holistic support, career security, and dignity — empowering every athlete to grow from a dreamer to a national hero."
+              className="section-animate"
+            />
+            <FeatureCard
+              icon={Medal}
+              title="Empowering Lives Through Sports"
+              description="We don’t just train athletes — we transform lives and empower communities. By uplifting para-athletes, we build resilience, confidence, and a stronger India that leaves no one behind."
               className="section-animate"
             />
           </div>
@@ -133,10 +167,7 @@ const Index = () => {
             <div className="flex-1">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg lg:text-xl leading-relaxed max-w-3xl">
-                To scout and nurture talented para athletes, providing them with
-                world-class training, mentorship, and support to realize their fullest
-                potential — empowering them to pursue the Indian dream of winning
-                medals at the Paralympics.
+              At PNSPT, our mission is to create an inclusive sporting ecosystem that empowers para, deaf, blind, and underprivileged athletes with world-class training, holistic support, and equal opportunities. We strive to break barriers, nurture champions, and inspire a culture where every athlete is celebrated for excellence, resilience, and the spirit of representing India on the global stage.
               </p>
             </div>
             <div className="hidden lg:block ml-12">
@@ -161,11 +192,7 @@ const Index = () => {
             <div className="flex-1 section-animate">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Our Vision</h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl">
-                Our initiative focuses on identifying talented para shooters and
-                nurturing them through advanced training and sponsorship
-                opportunities. By establishing world-class infrastructure with
-                international-standard shooting ranges and facilities, we aim to
-                create an environment of excellence.
+              To see India emerge as a global leader in inclusive sports — where para, deaf, blind, and underprivileged athletes stand on equal footing, breaking records, winning medals, and inspiring generations. We envision a nation where excellence is the only benchmark, and every athlete’s journey is honored with dignity, opportunity, and pride.
               </p>
             </div>
           </div>
@@ -214,19 +241,13 @@ const Index = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Founder & CEO</h2>
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Prakash Nanjappa is a distinguished Indian shooter renowned for his exceptional skills in the 10-meter air
-                  pistol and 50-meter pistol events. Representing India on the international stage, he has showcased
-                  remarkable precision and determination, earning him a revered spot among the country's top shooters. His
-                  career is marked by a series of notable achievements, including representing India at the prestigious Olympic
-                  Games.
+                Olympian and Arjuna Awardee Prakash Nanjappa is the Founder and CEO of the Prakash Nanjappa Sports Promotion Trust (PNSPT). A decorated shooter, he has represented India at the Olympics, ISSF World Cup, Asian Games, and Commonwealth Games, winning multiple medals and bringing glory to the nation.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Further cementing his legacy in Indian sports, Prakash was honored with the Arjuna Award, one of the
-                  highest accolades for sports excellence in India, recognizing his significant contributions and
-                  outstanding performance in shooting. Prakash Nanjappa's journey is a testament to his relentless
-                  pursuit of excellence and his unwavering dedication to his sport. He has brought laurels to our country by
-                  winning at various international competitions like: World Cup, Asian Games, Commonwealth Games,
-                  Asian Championship and Commonwealth Championship
+                  Driven by his belief in giving back to sport, he founded PNSPT to build an inclusive ecosystem that empowers para, deaf, blind, and underprivileged athletes with the same opportunities as their peers. Under his leadership, PNSPT focuses on grassroots development, high-performance training, and athlete welfare, with the vision of transforming India into a global powerhouse in inclusive sports.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Beyond his role as an athlete and administrator, he is a mentor who has coached and guided many young shooters including para and deaf athletes who have gone on to win medals at international competitions. His dedication extends beyond performance to the holistic growth of athletes, ensuring they receive the technical, emotional, and financial support needed to excel in sport and in life.
                 </p>
               </div>
               <Button variant="cta" className="mt-6">
@@ -250,17 +271,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AthleteCard
               image={athlete1}
-              name="Anubhav Sharma"
+              name="Sonia Sharma"
               achievement="National Level ABC Medalist"
             />
             <AthleteCard
               image={athlete2}
-              name="Anubhav Sharma"
+              name="Shivraj Sankhala"
               achievement="National Level ABC Medalist"
             />
             <AthleteCard
               image={athlete3}
-              name="Anubhav Sharma"
+              name="Chetan Hanmant Sapka"
               achievement="National Level ABC Medalist"
             />
           </div>
