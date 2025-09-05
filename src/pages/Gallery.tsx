@@ -152,12 +152,11 @@ const Gallery = () => {
               Join PNSPT and help us create more moments worth capturing. Together, we can build India's Paralympic legacy.
             </p>
             <div className="space-x-4">
+            <a href='/contact'>
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors">
                 Join Us
               </button>
-              <button className="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
-                Support Us
-              </button>
+            </a>
             </div>
           </div>
         </div>

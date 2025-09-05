@@ -6,15 +6,14 @@ import pnsptLogo from '@/assets/pnspt-logo.png';
 const Footer = () => {
   const socialLinks = [
     { Icon: Facebook, href: '#', label: 'Facebook' },
-    { Icon: Twitter, href: '#', label: 'Twitter' },
-    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
+    { Icon: Linkedin, href: 'https://www.linkedin.com/company/prakash-nanjapa-sports-promotion-trust/', label: 'LinkedIn' },
+    { Icon: Instagram, href: 'https://www.instagram.com/pnspt.olympicsports?igsh=MXVlZ3owb2pjazYwZA==', label: 'Instagram' },
   ];
 
   const navLinks = [
-    { to: '/privacy-policy', label: 'Privacy Policy' },
-    { to: '/copyright', label: 'Copyright' },
-    { to: '/contact', label: 'Email Address' },
+    { to: '/Gallery', label: 'Gallery' },
+    { to: '/what-we-do', label: 'What we Do' },
+    { to: '/Contact', label: 'Contact Us' },
   ];
 
   return (
@@ -27,10 +26,7 @@ const Footer = () => {
             <img src={pnsptLogo} alt="" className="h-8 w-auto" />
           </div>
             <p className="text-sm text-[#333333] leading-relaxed">
-              We offers a comprehensive suite of digital marketing services that cover all aspects
-              of our online presence. From SEO and social media marketing to content creation and
-              PPC advertising, they have the expertise and resources to handle our diverse
-              marketing needs.
+            PNSPT is committed to building an inclusive future for Indian sports, empowering para, deaf, blind, and underprivileged athletes through grassroots programs, structured training, and holistic support — creating champions who inspire a nation.
             </p>
           </div>
 
@@ -60,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-[#666666]">Hey@boostim.com</span>
+                <span className="text-sm text-[#666666]">pnspt.olympicsports@gmail.comq</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />

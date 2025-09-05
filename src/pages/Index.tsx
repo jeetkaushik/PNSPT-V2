@@ -298,9 +298,11 @@ const Index = () => {
                   Be a part of our <span className="text-primary">Mission</span>
                 </h2>
               </div>
-              <Button variant="cta" size="xl" className="bg-primary hover:bg-primary-hover">
-                Contact Us →
-              </Button>
+              <a href='/contact'>
+                <Button variant="cta" size="xl" className="bg-primary hover:bg-primary-hover">
+                  Contact Us →
+                </Button>
+              </a>
             </div>
           </div>
         </div>

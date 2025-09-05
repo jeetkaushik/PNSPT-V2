@@ -4,6 +4,7 @@ import { Target, Award, Users, Medal, BookOpen, Heart } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
+import heroBg from "../assets/what-we-do-2.png";
 import {
   Accordion,
   AccordionContent,
@@ -86,7 +87,7 @@ const WhatWeDo = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-white bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/assets/hero-bg.png')" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 section-animate">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">What We Stand For</h2>
@@ -110,67 +111,83 @@ const WhatWeDo = () => {
       </section>
 
       {/* Training Programs Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-16 lg:py-24 bg-white bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${heroBg})` }}>
+        {/* Overlay */}
+        {/* <div className="absolute inset-0 bg-black/60"></div> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 p-8">
             <div className="section-animate">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">How your support can make a difference</h2>
-              <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-white mb-12 text-center lg:text-left">
+                How your support can make a difference
+              </h2>
+
+              {/* Responsive 2x2 grid for points */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {/* Point 1 */}
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2"> Fund Training, Travel, and Competition Expenses</h3>
-                    <p className="text-muted-foreground">Your contributions will directly support the day-to-day needs of talented para athletes — including professional coaching fees, sports science support, equipment purchase, physiotherapy, psychological counseling, nutrition guidance, and international exposure trips.
-                    This financial backing ensures that no athlete is held back due to lack of resources.</p>
+                    <h3 className="font-semibold text-foreground text-white mb-2">
+                      Fund Training, Travel, and Competition Expenses
+                    </h3>
+                    <p className="text-muted-foreground text-gray-200">
+                      Your contributions will directly support the day-to-day needs of talented para athletes — including professional coaching fees, sports science support, equipment purchase, physiotherapy, psychological counseling, nutrition guidance, and international exposure trips. This financial backing ensures that no athlete is held back due to lack of resources.
+                    </p>
                   </div>
                 </div>
+
+                {/* Point 2 */}
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Build World-Class Sports Infrastructure</h3>
-                    <p className="text-muted-foreground">By sponsoring or co-funding sports infrastructure such as international-standard shooting ranges, training centers, boarding facilities, and rehabilitation centers, you can help create a solid foundation for long-term athletic development — enabling hundreds of athletes to train with dignity and world-class amenities.</p>
+                    <h3 className="font-semibold text-foreground text-white mb-2">
+                      Build World-Class Sports Infrastructure
+                    </h3>
+                    <p className="text-muted-foreground text-gray200">
+                      By sponsoring or co-funding sports infrastructure such as international-standard shooting ranges, training centers, boarding facilities, and rehabilitation centers, you can help create a solid foundation for long-term athletic development — enabling hundreds of athletes to train with dignity and world-class amenities.
+                    </p>
                   </div>
                 </div>
+
+                {/* Point 3 */}
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Offer Employment Pathways for Para Athletes</h3>
-                    <p className="text-muted-foreground">Skill development and professional certifications (such as NIS and ISSF programs) allow para athletes to pursue careers in coaching, sports management, and mentorship. Your support can fund these programs, ensuring financial independence for athletes even after their sporting careers.</p>
+                    <h3 className="font-semibold text-foreground mb-2 text-white">
+                      Offer Employment Pathways for Para Athletes
+                    </h3>
+                    <p className="text-muted-foreground text-gray-200">
+                      Skill development and professional certifications (such as NIS and ISSF programs) allow para athletes to pursue careers in coaching, sports management, and mentorship. Your support can fund these programs, ensuring financial independence for athletes even after their sporting careers.
+                    </p>
                   </div>
                 </div>
+
+                {/* Point 4 */}
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-sm">4</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Promote Inclusivity and Drive Social Change</h3>
-                    <p className="text-muted-foreground">Supporting para athletes is not just about sports — it's about changing mindsets, breaking societal barriers, and creating a culture of true inclusivity.
-                    Through your partnership, you become a catalyst for building an India where everyone, regardless of ability, is given equal opportunity to shine.</p>
+                    <h3 className="font-semibold text-foreground mb-2 text-white">
+                      Promote Inclusivity and Drive Social Change
+                    </h3>
+                    <p className="text-muted-foreground text-gray-200">
+                      Supporting para athletes is not just about sports — it's about changing mindsets, breaking societal barriers, and creating a culture of true inclusivity. Through your partnership, you become a catalyst for building an India where everyone, regardless of ability, is given equal opportunity to shine.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            <div className="section-animate">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Join Our Training Program</h3>
-                <p className="text-muted-foreground mb-6">
-                  Ready to start your journey with PNSPT? Our expert coaches are here to help you achieve your sporting dreams.
-                </p>
-                <Button variant="cta" size="lg" className="w-full">
-                  Apply Now
-                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Impact Section */}
       <section className="py-16 lg:py-24 bg-white">
@@ -198,6 +215,68 @@ const WhatWeDo = () => {
             <div className="text-center section-animate">
               <div className="text-4xl font-bold text-primary mb-2">100%</div>
               <div className="text-sm text-muted-foreground">Dedication to Excellence</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Join Hands Banner Section */}
+      <section className="py-16 lg:py-24 ribbon-red">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center section-animate">
+            <h2 className="text-white text-3xl lg:text-5xl font-bold mb-6">
+              Join Hands with PNSPT
+            </h2>
+            
+            <p className="text-white text-lg lg:text-xl max-w-4xl mx-auto mb-12 leading-relaxed">
+              Together, we can create an India where dreams know no boundaries — and where every champion, regardless of ability, has the platform to succeed. We invite you to partner with us, to empower futures, inspire the nation, and make history. Be the change. Support India's para-athlete champions.
+            </p>
+
+            {/* Contact Details */}
+            <div className="bg-white/20 rounded-2xl p-8 lg:p-12 max-w-2xl mx-auto border-2 border-white/20">
+              <h3 className="text-xl lg:text-2xl font-semibold mb-6">
+                Get in Touch
+              </h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-center justify-center space-x-3">
+                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <a 
+                    href="mailto:pnspt.olympicsports@gmail.com" 
+                    className="transition-colors text-lg font-medium"
+                  >
+                    pnspt.olympicsports@gmail.com
+                  </a>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-3">
+                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <a 
+                    href="tel:+919379845454" 
+                    className=" transition-colors text-lg font-medium"
+                  >
+                    +91 9379845454
+                  </a>
+                </div>
+              </div>
+              <a href='/contact'>
+                <div className="mt-8">
+                  <Button 
+                    size="lg" 
+                    className="text-white font-semibold px-8 py-3 text-lg"
+                  >
+                    Partner With Us
+                  </Button>
+                </div>
+              </a>
             </div>
           </div>
         </div>
