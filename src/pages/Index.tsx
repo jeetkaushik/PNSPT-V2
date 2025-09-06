@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Target, Award, RotateCcw, Medal, Users, Lightbulb, Rocket, Heart, Globe, Leaf } from 'lucide-react';
+import { Target, Award, RotateCcw, Medal, Users, Lightbulb, Rocket, Heart, Globe, Leaf, EarthIcon, TrophyIcon, IterationCcwIcon, BicepsFlexedIcon, GraduationCapIcon, HandHeartIcon, SproutIcon, ScaleIcon, HandshakeIcon, HeartPulseIcon } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
@@ -37,32 +37,32 @@ const Index = () => {
 
   const sdgCards = [
     {
-      icon: Heart,
+      icon: GraduationCapIcon,
       title: "SDG 4 : Quality Education",
       description: "We provide para athletes with access to professional education, certifications, technical sports training, and skill development programs. Through holistic learning pathways, we equip them with the knowledge and expertise to build long-term, sustainable careers in sports, coaching, and beyond."
     },
     {
-      icon: Users,
+      icon: HandHeartIcon,
       title: "SDG 10 : Reduced Inequalities",
       description: "Differently-abled athletes often face systemic challenges and societal barriers. Our programs are designed to level the playing field, ensuring that talent, not disability, defines an athlete's journey. By giving para athletes equal opportunities for training, competition, employment, and recognition, PNSPT actively works toward reducing inequalities in society."
     },
     {
-      icon: Globe,
+      icon: SproutIcon,
       title: "SDG 8 : Decent Work and Economic Growth",
       description: "We emphasize scientific sports training, physical fitness, mental health support, and injury rehabilitation for our athletes. Our holistic wellness programs help athletes achieve optimal health, enhancing their performance and overall quality of life."
     },
     {
-      icon: Medal,
+      icon: ScaleIcon,
       title: "SDG 5 : Gender Equality",
       description: "Our programs encourage equal participation of women para athletes, promoting leadership, visibility, and empowerment for women in sports. PNSPT is committed to building an ecosystem where both men and women para athletes receive the support and recognition they deserve."
     },
     {
-      icon: Leaf,
+      icon: HandshakeIcon,
       title: "SDG 17 : Partnerships for the Goals",
       description: "Through strategic CSR partnerships with corporates, institutions, and individuals, we foster a collaborative approach to achieving our vision. Together with our partners, we maximize our impact, align with national and international development agendas, and amplify our collective contribution toward a better world."
     },
     {
-      icon: Target,
+      icon: HeartPulseIcon,
       title: "SDG 3 : Good Health AND Well-Being",
       description: "We emphasize scientific sports training, physical fitness, mental health support, and injury rehabilitation for our athletes. Our holistic wellness programs help athletes achieve optimal health, enhancing their performance and overall quality of life."
     }
@@ -133,25 +133,25 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             <FeatureCard
-              icon={RotateCcw}
+              icon={EarthIcon}
               title="A Brighter India on the Global sports stage"
               description="We envision India as a global powerhouse in para sports, where athletes trained with resilience and determination proudly raise the national flag at Paralympics, World Championships, and beyond — not by chance, but through design, effort, and belief."
               className="section-animate"
             />
             <FeatureCard
-              icon={Award}
+              icon={TrophyIcon}
               title="Building Champions not just particpants"
               description="We believe differently-abled athletes are defined by spirit, not challenges. Our mission is to break barriers and build champions who inspire generations, celebrated equally for their excellence and achievements."
               className="section-animate"
             />
             <FeatureCard
-              icon={Users}
+              icon={IterationCcwIcon}
               title="A Sports Ecosystem where every dream matters "
               description="We are building an inclusive sports ecosystem that provides world-class training, holistic support, career security, and dignity — empowering every athlete to grow from a dreamer to a national hero."
               className="section-animate"
             />
             <FeatureCard
-              icon={Medal}
+              icon={BicepsFlexedIcon}
               title="Empowering Lives Through Sports"
               description="We don’t just train athletes — we transform lives and empower communities. By uplifting para-athletes, we build resilience, confidence, and a stronger India that leaves no one behind."
               className="section-animate"
@@ -180,8 +180,7 @@ const Index = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-16 lg:py-24 bg-gray-50 relative">
-        <div className="absolute top-0 left-0 w-full h-20 bg-primary transform -skew-y-1 origin-top-left"></div>
+      <section className="py-16 lg:py-24 bg-gray-50 relative mt-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center justify-between">
             <div className="hidden lg:block mr-12">

@@ -31,20 +31,20 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: "(406) 555-0120",
+      details: "+91 9379845454",
       subtext: "Mon-Fri 9am-6pm"
     },
     {
       icon: Mail,
       title: "Email",
-      details: "info@pnspt.org",
+      details: "pnspt.olympicsports@gmail.com",
       subtext: "We'll respond within 24 hours"
     },
     {
       icon: MapPin,
       title: "Address", 
-      details: "2972 Westheimer Rd. Santa Ana, Illinois 85486",
-      subtext: "Visit our training facility"
+      details: "Esteem Mall, 4th Floor, Bengaluru, 560024",
+      subtext: ""
     },
     {
       icon: Clock,
@@ -199,9 +199,18 @@ const Contact = () => {
               <div className="bg-white p-8 rounded-lg shadow-lg h-full">
                 <h2 className="text-2xl font-bold text-foreground mb-6">Visit Our Facility</h2>
                 
-                {/* Placeholder for map */}
-                <div className="bg-gray-200 h-64 rounded-lg mb-6 flex items-center justify-center">
-                  <p className="text-gray-500">Interactive Map Coming Soon</p>
+                {/* Map */}
+                <div className="bg-gray-200 h-64 rounded-lg mb-6 overflow-hidden">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7885039811385!2d77.59079287586545!3d13.049130113172174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178ef921b5bd%3A0x406b41c8e6c8c012!2sEsteem%20Mall!5e0!3m2!1sen!2sin!4v1757145679244!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style={{border: 0}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  ></iframe>
                 </div>
 
                 <div className="space-y-4">

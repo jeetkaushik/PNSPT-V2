@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-[#666666]">(406) 555-0120</span>
+                <span className="text-sm text-[#666666]">+91 9379845454</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
@@ -61,8 +61,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-[#666666]">
-                  2972 Westheimer Rd. Santa Ana,<br />
-                  Illinois 85486
+                Esteem Mall #127 & 128, 4th Floor, Bellary Road<br/>
+                Bengaluru, 560024
                 </span>
               </div>
             </div>

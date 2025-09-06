@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Target, Award, Users, Medal, BookOpen, Heart } from 'lucide-react';
+import { HandCoins, Target, Award, Users, Medal, BookOpen, Heart, RibbonIcon, Building2, MedalIcon, BrainIcon, ActivityIcon, GraduationCap } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
@@ -42,31 +42,50 @@ const WhatWeDo = () => {
       description: "We identify talented para-athletes across India, especially in shooting, and offer them professional-level training and opportunities."
     },
     {
-      icon: Award,
+      icon: Building2,
       title: "World-Class Infrastructure",
       description: "We either adopt existing institutions with good sports facilities or establish our own international-standard shooting ranges and training centers to give our athletes the best environment to grow."
     },
     {
-      icon: Users,
+      icon: MedalIcon,
       title: "Holistic Athelete Development",
       description: "We take a 360-degree approach — physical fitness, cognitive skills, mental strength, technical training, soft skills, life skills, and emotional wellbeing are all woven into the athlete’s journey."
     },
     {
-      icon: Medal,
+      icon: BrainIcon,
       title: "Scientific and Proffestional Training",
       description: "Supported by a panel of expert coaches, physiotherapists, nutritionists, psychologists, and sports scientists, PNSPT ensures athletes receive cutting-edge, scientific training methodologies."
     },
     {
-      icon: BookOpen,
+      icon: ActivityIcon,
       title: "Performance Tracking",
       description: "Our talent management system records athletes' performances, tracks progress, identifies growth areas, and builds a sustainable feeder system for future excellence."
     },
     {
-      icon: Heart,
+      icon: GraduationCap,
       title: "Career Building",
       description: "We ensure that athletes and coaches are not left behind after their competitive years — career counseling, professional certifications (like NIS and ISSF), and job placements are part of our long-term support plan."
     },
   ];
+
+  const Benefits = [
+    {
+      icon: HandCoins,
+      title: "100% Tax Benefit Under Section 80G",
+      description: "All PNSPT contributions qualify for 100% tax exemption under Section 80G, helping companies maximize CSR funds while gaining strong tax benefits."
+    },
+    {
+      icon: RibbonIcon,
+      title: "Enhance Brand Reputation and National Pride",
+      description: "Partnering with PNSPT positions your brand as a leader in corporate citizenship, building goodwill while aligning with national pride and India’s sporting aspirations."
+    },
+    {
+      icon: Users,
+      title: "Strengthen CSR Engagement and Societal Impact",
+      description: "By supporting para athletes through programs and infrastructure, your brand shows real social responsibility, creating measurable impact beyond CSR compliance and shaping a lasting legacy."
+    },
+  ];
+
 
   return (
     <div className="min-h-screen">
@@ -188,6 +207,28 @@ const WhatWeDo = () => {
         </div>
       </section>
 
+      <section className="py-16 lg:py-24 bg-white bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/assets/hero-bg.png')" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 section-animate">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Benifits for Partner Organisation</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Partnerships That Pay Back in Purpose and Pride
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Benefits.map((Benefit, index) => (
+              <FeatureCard
+                key={index}
+                icon={Benefit.icon}
+                title={Benefit.title}
+                description={Benefit.description}
+                className="section-animate"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Impact Section */}
       <section className="py-16 lg:py-24 bg-white">
