@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
 import AthleteCard from '@/components/AthleteCard';
-import heroBackground from '@/assets/hero-bg.png';
+import heroBackground from '@/assets/P24.jpeg';
 import athlete1 from '@/assets/athlete1.jpg';
 import athlete2 from '@/assets/athlete2.jpg';
 import athlete3 from '@/assets/athlete3.jpg';
@@ -198,6 +198,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Founder & CEO Section */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="section-animate">
+              <div className="relative">
+                <img src={founderAwards} alt="Prakash Nanjappa Awards and Achievements" className="rounded-lg shadow-lg w-full" />
+              </div>
+            </div>
+            
+            <div className="section-animate">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Founder & CEO</h2>
+              <div className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                Olympian and Arjuna Awardee Prakash Nanjappa is the Founder and CEO of the Prakash Nanjappa Sports Promotion Trust (PNSPT). A decorated shooter, he has represented India at the Olympics, ISSF World Cup, Asian Games, and Commonwealth Games, winning multiple medals and bringing glory to the nation.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Driven by his belief in giving back to sport, he founded PNSPT to build an inclusive ecosystem that empowers para, deaf, blind, and underprivileged athletes with the same opportunities as their peers. Under his leadership, PNSPT focuses on grassroots development, high-performance training, and athlete welfare, with the vision of transforming India into a global powerhouse in inclusive sports.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Beyond his role as an athlete and administrator, he is a mentor who has coached and guided many young shooters including para and deaf athletes who have gone on to win medals at international competitions. His dedication extends beyond performance to the holistic growth of athletes, ensuring they receive the technical, emotional, and financial support needed to excel in sport and in life.
+                </p>
+              </div>
+              <Button variant="cta" className="mt-6">
+                Contact us
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SDGs Section */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,32 +257,49 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Founder & CEO Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+            {/* An Invitation to Join Our Dream */}
+        <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="section-animate">
-              <div className="relative">
-                <img src={founderAwards} alt="Prakash Nanjappa Awards and Achievements" className="rounded-lg shadow-lg w-full" />
-              </div>
+          <div className="text-center mb-12 section-animate">
+            <div className="flex items-center justify-center mb-4">
+              {/* <Heart className="h-8 w-8 text-primary mr-2" /> */}
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">An Invitation to Join Our Dream</h2>
             </div>
-            
-            <div className="section-animate">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Founder & CEO</h2>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                Olympian and Arjuna Awardee Prakash Nanjappa is the Founder and CEO of the Prakash Nanjappa Sports Promotion Trust (PNSPT). A decorated shooter, he has represented India at the Olympics, ISSF World Cup, Asian Games, and Commonwealth Games, winning multiple medals and bringing glory to the nation.
+            <div className="mt-8 mb-6 flex items-center justify-center flex-col">
+              {/* <span className="text-lg text-muted-foreground mb-4">This dream is not ours alone.</span> */}
+              <span className="block w-fit text-center text-lg font-semibold text-white bg-primary px-3 py-1 rounded">
+                This dream is not ours alone. We invite you to be part of this powerful journey
+              </span>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-50 p-8 lg:p-12 rounded-lg shadow-sm section-animate">
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p className="font-semibold text-foreground text-center">
+                  We invite <span className="font-semibold text-foreground">corporates, individuals, policymakers, and sports enthusiasts</span> to become part of this powerful journey.
+                  Your support, your belief, and your participation can help us <span className="font-bold text-primary">create history</span> — one champion at a time.
+                  Together, we can build an India where <span className="font-bold text-primary">every athlete</span>, regardless of physical ability, finds their rightful place under the spotlight, carrying the dreams of a billion people.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Driven by his belief in giving back to sport, he founded PNSPT to build an inclusive ecosystem that empowers para, deaf, blind, and underprivileged athletes with the same opportunities as their peers. Under his leadership, PNSPT focuses on grassroots development, high-performance training, and athlete welfare, with the vision of transforming India into a global powerhouse in inclusive sports.
+                
+                <p className="text-lg font-semibold text-center py-4">
+                  At PNSPT, we dare to dream big — and we are determined to make that dream a reality.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Beyond his role as an athlete and administrator, he is a mentor who has coached and guided many young shooters including para and deaf athletes who have gone on to win medals at international competitions. His dedication extends beyond performance to the holistic growth of athletes, ensuring they receive the technical, emotional, and financial support needed to excel in sport and in life.
-                </p>
+                
+                <div className="pt-6 border-t border-gray-200">
+                  <p className="text-2xl font-bold text-foreground text-center mb-6">
+                    <span className="text-primary">Join us. Support us. Dream with us.</span>
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href='/contact'>
+                      <Button variant="cta" className="w-full sm:w-auto hover:scale-105 transition-transform">
+                        Support Our Mission
+                      </Button>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <Button variant="cta" className="mt-6">
-                Contact us
-              </Button>
             </div>
           </div>
         </div>
@@ -286,6 +334,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
 
       {/* Call to Action Banner */}
       <section className="py-16 bg-gray-50">

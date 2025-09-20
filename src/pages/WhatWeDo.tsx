@@ -234,29 +234,10 @@ const WhatWeDo = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 section-animate">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Impact</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Since our inception, PNSPT has made significant contributions to Indian para-sports development.
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Impact Metrics</h2>
+            <p className="mt-8 text-lg text-muted-foreground max-w-4xl mx-auto">
+              At PNSPT, we measure impact not just in medals but in lives transformed. Through our structured, scientific training ecosystem, we have nurtured dozens of differently-abled athletes, equipping them with world-class coaching, fitness, cognitive training, and mental resilience. Many have earned national and international medals, showcasing India’s rising strength in para sports, while also completing globally recognized certifications such as the NIS Foundation Course, NIS Diploma, and ISSF Coaching Levels, ensuring sustainable career pathways beyond competition. Our commitment extends to securing meaningful career placements in coaching, mentorship, and sports development, so that every athlete leaves with not only achievements on the field but also dignity, independence, and a future filled with opportunity..
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center section-animate">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Athletes Trained</div>
-            </div>
-            <div className="text-center section-animate">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
-              <div className="text-sm text-muted-foreground">International Medals</div>
-            </div>
-            <div className="text-center section-animate">
-              <div className="text-4xl font-bold text-primary mb-2">5+</div>
-              <div className="text-sm text-muted-foreground">Paralympic Qualifiers</div>
-            </div>
-            <div className="text-center section-animate">
-              <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Dedication to Excellence</div>
-            </div>
           </div>
         </div>
       </section>

@@ -6,6 +6,23 @@ import athlete1 from '@/assets/athlete1.jpg';
 import athlete2 from '@/assets/athlete2.jpg';
 import athlete3 from '@/assets/athlete3.jpg';
 import founder from '@/assets/founder.jpg';
+import p1 from '@/assets/P10.jpeg'; 
+import p2 from '@/assets/P11.jpeg'; 
+import p3 from '@/assets/P12.jpeg'; 
+import p4 from '@/assets/P13.jpeg'; 
+import p5 from '@/assets/P14.jpeg'; 
+import p6 from '@/assets/P20.jpeg'; 
+import p7 from '@/assets/P24.jpeg'; 
+import p8 from '@/assets/P25.jpeg'; 
+import p9 from '@/assets/Pi3.jpeg'; 
+import p10 from '@/assets/Pi4.jpeg'; 
+import p11 from '@/assets/Pi5.jpeg'; 
+import p12 from '@/assets/Pi6.jpeg'; 
+import p13 from '@/assets/Pi7.jpeg'; 
+import p14 from '@/assets/Pi8.jpeg'; 
+import p15 from '@/assets/Pi9.jpeg'; 
+import p16 from '@/assets/Pi15.jpeg'; 
+import p17 from '@/assets/Pi17.jpeg'; 
 import heroBackground from '@/assets/hero-bg.png';
 
 const Gallery = () => {
@@ -34,17 +51,30 @@ const Gallery = () => {
 
   const galleryImages = [
     { src: heroBackground, alt: "Training Facility", category: "Facilities" },
-    { src: athlete1, alt: "Champion Shooter", category: "Athletes" },
-    { src: athlete2, alt: "Paralympic Medalist", category: "Athletes" },
-    { src: athlete3, alt: "Rising Star", category: "Athletes" },
-    { src: founder, alt: "Prakash Nanjappa", category: "Leadership" },
     { src: heroBackground, alt: "Competition Arena", category: "Events" },
-    { src: athlete1, alt: "Training Session", category: "Training" },
-    { src: athlete2, alt: "Award Ceremony", category: "Events" },
-    { src: athlete3, alt: "Team Practice", category: "Training" },
+    { src: p1, alt: "Training Session", category: "Training" },
+    { src: p2, alt: "Award Ceremony", category: "Awards" },
+    { src: p3, alt: "Award Ceremony", category: "Awards" },
+    { src: p4, alt: "Award Ceremony", category: "Training" },
+    { src: p5, alt: "Award Ceremony", category: "Training" },
+    { src: p6, alt: "Award Ceremony", category: "Training" },
+    { src: p7, alt: "Award Ceremony", category: "Training" },
+    { src: p8, alt: "Award Ceremony", category: "Training" },
+    { src: p9, alt: "Award Ceremony", category: "Events" },
+    { src: p10, alt: "Award Ceremony", category: "Facilities" },
+    { src: p11, alt: "Award Ceremony", category: "Facilities" },
+    { src: p12, alt: "Award Ceremony", category: "Facilities" },
+    { src: p13, alt: "Award Ceremony", category: "Facilities" },
+    { src: p14, alt: "Award Ceremony", category: "Athletes" },
+    { src: p15, alt: "Award Ceremony", category: "Athletes" },
+    { src: p16, alt: "Award Ceremony", category: "Events" },
+    { src: p17, alt: "Award Ceremony", category: "Events" },
+
+
+
   ];
 
-  const categories = ["All", "Athletes", "Training", "Events", "Facilities", "Leadership"];
+  const categories = ["All", "Athletes", "Training", "Awards", "Facilities"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredImages = galleryImages.filter(image => 
