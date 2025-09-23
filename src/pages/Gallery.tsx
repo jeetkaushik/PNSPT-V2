@@ -70,12 +70,7 @@ const Gallery = () => {
 
   ];
 
-  const categories = ["All", "Athletes", "Training", "Awards", "Facilities"];
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredImages = galleryImages.filter(image => 
-    activeCategory === "All" || image.category === activeCategory
-  );
+  // Removed category filters; show all images
 
   return (
     <div className="min-h-screen">
@@ -95,32 +90,13 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Filter Tabs */}
-      <section className="py-8 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category
-                    ? 'bg-primary text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Filter Tabs removed */}
 
       {/* Gallery Grid */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredImages.map((image, index) => (
+            {galleryImages.map((image, index) => (
               <div
                 key={index}
                 className="section-animate group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -130,14 +106,9 @@ const Gallery = () => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-end">
-                    <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="font-semibold">{image.alt}</h3>
-                      <p className="text-sm opacity-80">{image.category}</p>
-                    </div>
-                  </div>
+                  {/* Hover overlay removed */}
                 </div>
               </div>
             ))}
